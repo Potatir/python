@@ -11,10 +11,14 @@ def finish():
     first.destroy()
 
 
-label = Label(text="something")
-label.pack()
-button = ttk.Button(text='something',command=finish)
-button.place(relx=.5, rely=.5,anchor=CENTER, width=80, height=80)
+
+
+for i in range(3):
+    for g in range(3):
+        btn = ttk.Button(text=f"({i},{g})")
+        btn.grid(row=i, column=g)
+
+
 
 
 first.protocol("KILL", finish)
