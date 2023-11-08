@@ -10,7 +10,12 @@ first.attributes("-toolwindow", True)
 def finish():
     first.destroy()
 
+make_some_tea = True
 
+
+
+if make_some_tea:
+    print("some tea")
 
 
 for i in range(3):
